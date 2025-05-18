@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Grid</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .mae {
+      background: #2e2e2e;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+
+    .resposta {
+      height: 60px;
+      background: #f0f0f0;
+      text-align: right;
+      padding: 10px;
+      font-size: 1.8em;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      background-color:#A9A9A9;
+      cursor: default;
+      transition: background 0.2s;
+    }
+    
+    .buttons button.paren{
+      padding: 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      background-color: #A9A9A9;
+      cursor: default;
+      transition: background 0.2s;
+    }
+    
+    .buttons button.paren:hover{
+      background-color: white;
+      color: black;
+    }
+
+    .buttons button.operador {
+      background-color: #2c82b5;
+      color: white;
+    }
+
+    .buttons button.libera {
+      background-color: #4caf50;
+      color: white;
+      grid-column: span 1;
+    }
+    
+    .buttons button.libera:hover{
+      background-color: white;
+      color: black;
+    }
+
+    .buttons button.apaga {
+      background-color: #f44336;
+      color: white;
+      font-size: 20px;;
+      grid-column: span 1;
+    }
+    
+    .buttons button.apaga {
+      background-color: #f44336;
+      color: white;
+      grid-column: span 1;
+    }
+    
+    .buttons button:hover {
+      background-color: #ffff00;
+    }
+    
+    .buttons button.operador:hover{
+      background-color: white;
+      color: black;
+    }
+    
+    .buttons button.apaga:hover{
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mae">
+    <div class="resposta">0</div>
+    <div class="buttons">
+      <button class="apaga">C</button>
+      <button class="paren">(</button>
+      <button class="paren">)</button>
+
+      <button class="operador">/</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operador">x</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operador">-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operador">+</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="apaga1"> <=</button>
+      <button class="libera">=</button>
+    </div>
+  </div>
+
+</body>
+</html>
