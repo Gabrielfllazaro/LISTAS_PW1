@@ -106,16 +106,7 @@ public class Login_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_Senha_txtActionPerformed
 
     private void ACESSAR_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ACESSAR_BTNActionPerformed
-String login= Login_txt.getText();
-String senha = Senha_txt.getText();
-if(login.equalsIgnoreCase("Gabriel") && senha.equalsIgnoreCase("123")){
-    new Menu_GUI().setVisible(true);
-    JOptionPane.showMessageDialog(null,"Bem vindo ao sistema");
-    new Menu_GUI().setVisible(true);
-    }else{
-    JOptionPane.showMessageDialog(null,"login ou senha invalido");
-}
-
+        Model.Login_DAO.Acessando();
     }//GEN-LAST:event_ACESSAR_BTNActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

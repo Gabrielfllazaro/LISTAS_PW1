@@ -1,13 +1,14 @@
 
 package main;
 
+import Model.Testa_BD;
 import View.Splash_GUI;
 
 public class Main {
 
     public static void main(String[] args) {
-                new Splash_GUI().setVisible(true);
-
+        new Splash_GUI().setVisible(true);
+        Testa_BD.carregaDriver();
     }
     
 }

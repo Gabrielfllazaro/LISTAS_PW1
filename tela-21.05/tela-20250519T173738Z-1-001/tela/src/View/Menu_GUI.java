@@ -31,6 +31,9 @@ public class Menu_GUI extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        Excluir_BTN = new javax.swing.JButton();
+        Editar_BTN = new javax.swing.JButton();
+        Visualizar_BTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -52,7 +55,7 @@ public class Menu_GUI extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jButton1);
-        jButton1.setBounds(40, 110, 100, 40);
+        jButton1.setBounds(40, 100, 100, 40);
 
         jButton2.setText("x");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -62,6 +65,33 @@ public class Menu_GUI extends javax.swing.JFrame {
         });
         jPanel3.add(jButton2);
         jButton2.setBounds(290, 30, 80, 50);
+
+        Excluir_BTN.setText("Excluir");
+        Excluir_BTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Excluir_BTNActionPerformed(evt);
+            }
+        });
+        jPanel3.add(Excluir_BTN);
+        Excluir_BTN.setBounds(40, 200, 100, 40);
+
+        Editar_BTN.setText("Editar");
+        Editar_BTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Editar_BTNActionPerformed(evt);
+            }
+        });
+        jPanel3.add(Editar_BTN);
+        Editar_BTN.setBounds(170, 100, 100, 40);
+
+        Visualizar_BTN.setText("Visualizar");
+        Visualizar_BTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Visualizar_BTNActionPerformed(evt);
+            }
+        });
+        jPanel3.add(Visualizar_BTN);
+        Visualizar_BTN.setBounds(40, 150, 100, 40);
 
         getContentPane().add(jPanel3);
         jPanel3.setBounds(0, 0, 400, 300);
@@ -77,6 +107,18 @@ public class Menu_GUI extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void Visualizar_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Visualizar_BTNActionPerformed
+        new Visualizar_GUI().setVisible(true);
+    }//GEN-LAST:event_Visualizar_BTNActionPerformed
+
+    private void Editar_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Editar_BTNActionPerformed
+        new Editar_GUI().setVisible(true);
+    }//GEN-LAST:event_Editar_BTNActionPerformed
+
+    private void Excluir_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Excluir_BTNActionPerformed
+        new Excluir_GUI().setVisible(true);
+    }//GEN-LAST:event_Excluir_BTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -114,6 +156,9 @@ public class Menu_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Editar_BTN;
+    private javax.swing.JButton Excluir_BTN;
+    private javax.swing.JButton Visualizar_BTN;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;

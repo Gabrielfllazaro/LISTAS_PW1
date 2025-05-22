@@ -38,12 +38,12 @@ public class Cadastrar_GUI extends javax.swing.JFrame {
         Nome_txt = new javax.swing.JTextField();
         Modelo_txt = new javax.swing.JTextField();
         Marca_txt = new javax.swing.JTextField();
-        Cor_txt = new javax.swing.JTextField();
         Placa_txt = new javax.swing.JTextField();
         Num_txt = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        cor2_txt = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -81,15 +81,13 @@ public class Cadastrar_GUI extends javax.swing.JFrame {
         jPanel1.add(jLabel7);
         jLabel7.setBounds(20, 240, 140, 14);
         jPanel1.add(Nome_txt);
-        Nome_txt.setBounds(110, 90, 170, 20);
+        Nome_txt.setBounds(120, 90, 170, 20);
         jPanel1.add(Modelo_txt);
-        Modelo_txt.setBounds(110, 120, 170, 20);
+        Modelo_txt.setBounds(120, 120, 170, 20);
         jPanel1.add(Marca_txt);
-        Marca_txt.setBounds(110, 150, 170, 20);
-        jPanel1.add(Cor_txt);
-        Cor_txt.setBounds(110, 180, 130, 20);
+        Marca_txt.setBounds(120, 150, 170, 20);
         jPanel1.add(Placa_txt);
-        Placa_txt.setBounds(110, 210, 130, 20);
+        Placa_txt.setBounds(120, 210, 130, 20);
 
         Num_txt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +95,7 @@ public class Cadastrar_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(Num_txt);
-        Num_txt.setBounds(110, 240, 80, 20);
+        Num_txt.setBounds(120, 240, 80, 20);
 
         jButton1.setText("x");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -125,6 +123,8 @@ public class Cadastrar_GUI extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3);
         jButton3.setBounds(290, 250, 90, 30);
+        jPanel1.add(cor2_txt);
+        cor2_txt.setBounds(120, 180, 130, 20);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -153,7 +153,7 @@ public class Cadastrar_GUI extends javax.swing.JFrame {
         String nome = Nome_txt.getText();
         String modelo = Modelo_txt.getText();
         String marca = Marca_txt.getText();
-        String cor = Cor_txt.getText();
+        String cor = cor2_txt.getText();
         String placa = Placa_txt.getText();
         String vaga = Num_txt.getText();
         
@@ -199,12 +199,12 @@ public class Cadastrar_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField Cor_txt;
     public static javax.swing.JTextField Marca_txt;
     public static javax.swing.JTextField Modelo_txt;
     public static javax.swing.JTextField Nome_txt;
     public static javax.swing.JTextField Num_txt;
     public static javax.swing.JTextField Placa_txt;
+    public static javax.swing.JTextField cor2_txt;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
